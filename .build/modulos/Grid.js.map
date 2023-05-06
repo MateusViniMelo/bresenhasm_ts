@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../modulos/Grid.ts"],
+  "sourcesContent": ["class Grid {\n\n  tamanho\n  matriz: any\n  constructor(tamanho: any) {\n    this.tamanho = tamanho\n    this.matriz = []\n    this.criarMatriz()\n\n  }\n\n  private criarMatriz() {\n    for (let i = 0; i < this.tamanho; i++) {\n      this.matriz.push(new Array(this.tamanho).fill(0));\n    }\n  }\n  mostrarMatriz() {\n    this.matriz = this.matriz.reverse()\n    let output = \"\";\n    for (let i = 0; i < this.matriz.length; i++) {\n      for (let j = 0; j < this.matriz[i].length; j++) {\n        output += this.matriz[i][j] + \" \";\n      }\n      output += \"\\n\";\n    }\n\n    console.log(output);\n  }\n}\n\nexport default Grid"],
+  "mappings": ";;;;;;;AAAA;AAAA;AAAA;AAAA,WAAW;AAAA,EAET;AAAA,EACA;AAAA,EACA,YAAY,SAAc;AACxB,SAAK,UAAU;AACf,SAAK,SAAS;AACd,SAAK;AAAA;AAAA,EAIC,cAAc;AACpB,aAAS,IAAI,GAAG,IAAI,KAAK,SAAS,KAAK;AACrC,WAAK,OAAO,KAAK,IAAI,MAAM,KAAK,SAAS,KAAK;AAAA;AAAA;AAAA,EAGlD,gBAAgB;AACd,SAAK,SAAS,KAAK,OAAO;AAC1B,QAAI,SAAS;AACb,aAAS,IAAI,GAAG,IAAI,KAAK,OAAO,QAAQ,KAAK;AAC3C,eAAS,IAAI,GAAG,IAAI,KAAK,OAAO,GAAG,QAAQ,KAAK;AAC9C,kBAAU,KAAK,OAAO,GAAG,KAAK;AAAA;AAEhC,gBAAU;AAAA;AAGZ,YAAQ,IAAI;AAAA;AAAA;AAIhB,IAAO,eAAQ;",
+  "names": []
+}

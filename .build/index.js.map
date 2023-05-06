@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../index.ts"],
+  "sourcesContent": ["import Desenho from \"./modulos/Desenho\";\nimport Grid from \"./modulos/Grid\";\n\n\nlet grid = new Grid(10)\n\n\n// Desenho.desenharLinha(0, 0, 9, 9, grid)\nDesenho.desenharCirculo(4, 4, 4, grid)\n\ngrid.mostrarMatriz()"],
+  "mappings": ";;;;;;;;;;;;;;;;;;AAAA,qBAAoB;AACpB,kBAAiB;AAGjB,IAAI,OAAO,IAAI,oBAAK;AAIpB,uBAAQ,gBAAgB,GAAG,GAAG,GAAG;AAEjC,KAAK;",
+  "names": []
+}
